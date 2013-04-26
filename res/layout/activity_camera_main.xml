@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+      <FrameLayout
+          android:id="@+id/camera_preview"
+          android:layout_width="300dp"
+          android:layout_height="150dp"
+          android:layout_above="@+id/button_browse"
+          android:layout_below="@+id/textView1"
+          android:layout_toLeftOf="@+id/button_browse"
+          android:layout_toRightOf="@+id/button_scan" >
+
+      </FrameLayout>
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:text="Intraoral Scanner 2nd Gen. Glidewell Laborataries" />
+
+      <Button
+          android:id="@+id/button_scan"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignRight="@+id/textView1"
+          android:text="Scan" />
+
+      <Button
+          android:id="@+id/button_browse"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="101dp"
+          android:text="Browse" />
+
+</RelativeLayout>
